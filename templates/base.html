@@ -3,7 +3,14 @@
 <html>
     <head>
         <script src="https://unpkg.com/htmx.org@1.5.0"></script>
-        <link rel='stylesheet' href='{% static "recipes/recipes-htmx.css" %}' />
+        {% comment %} <link rel='stylesheet' href='{% static "recipes/recipes-htmx.css" %}' />
+        /home/mauro/Scrivania/django-template-for-production/Try-Django-3.2-for-production/recipes/static/recipes/recipes-htmx.css
+        /home/mauro/Scrivania/django-template-for-production/Try-Django-3.2-for-production/static/recipes/recipes-htmx.css {% endcomment %}
+
+        {% comment %} <link rel='stylesheet' href='{% static "recipes/recipes-htmx.css" %}' /> {% endcomment %}
+        <link rel='stylesheet' href='{% static "recipes/static/recipes/recipes-htmx.css" %}' />
+        
+        
     </head>
     <body>
         <h1>Hello World</h1>

@@ -3,4 +3,6 @@ gunicorn
 psycopg2-binary
 django-dotenv
 django-htmx
+django-storages
 pint
+boto3

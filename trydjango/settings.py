@@ -159,8 +159,10 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     BASE_DIR / "static", # os.path.join(BASE_DIR, 'static')
 ]
-
+print(STATICFILES_DIRS)
 STATIC_ROOT = BASE_DIR / "staticfiles-cdn" # in production, we want cdn
+
+#  https://trydjangofromsgb.fra1.digitaloceanspaces.com
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
