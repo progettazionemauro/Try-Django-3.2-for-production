@@ -40,9 +40,17 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+<<<<<<< HEAD
     # third-party
     'django_htmx',
     'storages',
+=======
+    
+    # thirdy-party
+    'django_htmx',
+    'storages',
+    
+>>>>>>> 75-start
     # internal
     'articles',
     'recipes',
@@ -163,7 +171,10 @@ STATICFILES_DIRS = [
     BASE_DIR / "static", # os.path.join(BASE_DIR, 'static')
 ]
 
-STATIC_ROOT = BASE_DIR / "staticfiles-cdn" # in production, we want cdn
+STATIC_ROOT = STATIC_ROOT = BASE_DIR / "staticfiles-cdn" # dev example
+
+from .cdn.conf import *  # noqa
+
 
 from .cdn.conf import * # noqa
 
@@ -175,3 +186,9 @@ from .cdn.conf import * # noqa
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# AWS_ACCESS_KEY_ID=os.environ.get('AWS_ACCESS_KEY_ID')
+# AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY_ID')
+# AWS_STORAGE_BUCKET_NAME = os.environ.get('AWS_STORAGE_BUCKET_NAME')
+# AWS_S3_ENDPOINT_URL = os.environ.get('AWS_S3_ENDPOINT_URL')
+# DEFAULT_FILE_STORAGE = os.environ.get('DEFAULT_FILE_STORAGE')
