@@ -169,7 +169,7 @@ STATIC_ROOT = STATIC_ROOT = BASE_DIR / "staticfiles-cdn" # dev example
 
 from .cdn.conf import *  # noqa
 
-
+MEDIA_ROOT=BASE_DIR/"staticfiles-cdn"/"uploads"
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
