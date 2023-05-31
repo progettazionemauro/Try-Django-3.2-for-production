@@ -40,17 +40,17 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-<<<<<<< HEAD
-    # third-party
+"""" "" <<<<<<< HEAD
+  """   # third-party
     'django_htmx',
     'storages',
-=======
+# =======
     
     # thirdy-party
     'django_htmx',
     'storages',
     
->>>>>>> 75-start
+
     # internal
     'articles',
     'recipes',
